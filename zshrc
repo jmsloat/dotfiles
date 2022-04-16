@@ -1,13 +1,23 @@
+source ~/.antigen.zsh
+
+
 ZSH_THEME="eastwood"
 plugins=(
     git 
     zsh-aliases-exa 
     sudo 
-    git 
     jsontools 
     golang 
     tmux
 )
+
+antigen use oh-my-zsh
+antigen bundle zsh-aliases-exa
+antigen bundle sudo
+antigen bundle tmux
+
+antigen theme robbyrussell
+antigen apply
 
 alias vim='nvim'
 alias vimrc='nvim ~/.config/nvim/init.vim'
