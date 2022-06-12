@@ -3,14 +3,15 @@
       relink: true
       force: true
 
-- clean: ['~']
-
 - link:
     ~/.tmux.conf: tmux.conf
     ~/.config/nvim/init.vim: vimrc
     ~/.config/i3/config: i3conf
     ~/.zshrc: zshrc
     ~/.antigen.zsh: antigen.zsh
+    ~/.local/share/nvim/site/autoload/plug.vim: plug.vim
+    ~/.config/Code/User/settings.json: settings-vscode.json
+    ~/.config/Code/User/keybindings.json: keybindings-vscode.json
     
 
 - create:
