@@ -13,6 +13,7 @@
     ~/.local/share/nvim/site/autoload/plug.vim: plug.vim
     ~/.config/Code/User/settings.json: settings-vscode.json
     ~/.config/Code/User/keybindings.json: keybindings-vscode.json
+    ~/.config/helix/config.toml: helix-config.toml
     
 
 - create:

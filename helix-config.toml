@@ -1,0 +1,20 @@
+theme = "rose_pine"
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+
+[keys.insert]
+esc = ["collapse_selection", "normal_mode"]
+j = { j = ["collapse_selection", "normal_mode"]}
+
+[keys.normal]
+"$"="goto_line_end"
+"^"="goto_first_nonwhitespace"
+G = "goto_file_end"
+
+# Extend and select commands that expect a manual input can't be chained
+# I've kept d[X] commands here because it's better to at least have the stuff you want to delete
+# selected so that it's just a keystroke away to delete
+d = { d = ["extend_to_line_bounds", "delete_selection"], t = ["extend_till_char"], s = ["surround_delete"], i = ["select_textobject_inner"], a = ["select_textobject_around"] }
+

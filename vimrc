@@ -60,7 +60,6 @@ call plug#begin("~/.vim/plugged")
     Plug 'joshdick/onedark.vim'
     Plug 'nvim-treesitter/nvim-treesitter'
     Plug 'numToStr/Comment.nvim'
-    Plug 'kyazdani42/nvim-tree.lua'
     Plug 'kyazdani42/nvim-web-devicons' " for file icons
 
     Plug 'neovim/nvim-lspconfig'
@@ -106,15 +105,7 @@ set completeopt=menu,menuone,noselect
 
 lua <<EOF
     -- auto pairs
-    local nvimtree = require('nvim-tree')
     require('nvim-autopairs').setup{}
-    nvimtree.setup{
-        auto_close = true,
-        open_on_setup = true,
-        view = {
-            auto_resize = true
-        }
-    }
     require('telescope').setup{}
     require('nvim-treesitter.configs').setup{
         highlight = {
@@ -128,15 +119,12 @@ lua <<EOF
     local dap = require("dap")
     dap.listeners.after.event_initialized["dapui_config"] = function()
       dapui.open()
-      nvimtree.close()
     end
     dap.listeners.before.event_terminated["dapui_config"] = function()
       dapui.close()
-      nvimtree.open()
     end
     dap.listeners.before.event_exited["dapui_config"] = function()
       dapui.close()
-      nvimtree.open()
     end
 
     local dapInstallPath = os.getenv('HOME') .. '/.local/share/nvim/dapinstall/'
