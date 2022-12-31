@@ -7,7 +7,10 @@
 - link:
     ~/.tmux.conf: tmux.conf
     ~/.config/nvim/init.vim: vimrc
+    ~/.config/alacritty/alacritty.yml: alacritty.yml
     ~/.config/i3/config: i3conf
+    ~/.config/polybar/config.ini: polybar-config.ini
+    ~/.config/polybar/launch.zsh: launch-polybar.zsh
     ~/.zshrc: zshrc
     ~/.antigen.zsh: antigen.zsh
     ~/.local/share/nvim/site/autoload/plug.vim: plug.vim
