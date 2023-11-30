@@ -9,12 +9,14 @@ plugins=(
     jsontools 
     golang 
     tmux
+    fzf
 )
 
 antigen use oh-my-zsh
 antigen bundle zsh-aliases-exa
 antigen bundle sudo
 antigen bundle tmux
+antigen bundle fzf
 
 antigen theme robbyrussell
 antigen apply
@@ -30,6 +32,7 @@ export CHROME_EXECUTABLE='google-chrome-stable'
 export PATH=$PATH:/home/sloat/go/bin
 export PATH=$PATH:/home/sloat/snap/flutter/bin
 export PATH=/home/jsloat/.nimble/bin:$PATH
+export PATH=/home/jsloat/.local/share/bin:$PATH
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
