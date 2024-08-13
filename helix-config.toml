@@ -1,4 +1,4 @@
-theme = "new_moon"
+theme = "github_dark_dimmed"
 
 [editor.cursor-shape]
 normal = "block"
@@ -7,11 +7,13 @@ insert = "bar"
 [keys.insert]
 esc = ["collapse_selection", "normal_mode"]
 j = { j = ["collapse_selection", "normal_mode"]}
+C-s = ":w"
 
 [keys.normal]
 "$"="goto_line_end"
 "^"="goto_first_nonwhitespace"
 G = "goto_file_end"
+C-s = ":w"
 
 # Extend and select commands that expect a manual input can't be chained
 # I've kept d[X] commands here because it's better to at least have the stuff you want to delete

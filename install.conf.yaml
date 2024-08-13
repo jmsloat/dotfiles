@@ -18,6 +18,7 @@
     "~/.config/Code - OSS/User/keybindings.json": keybindings-vscode.json
     "~/.config/Code - OSS/User/settings.json": settings-vscode.json
     ~/.config/helix/config.toml: helix-config.toml
+    ~/.config/wezterm/wezterm.lua: wezterm.lua
     
 
 - create:
