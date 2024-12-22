@@ -16,4 +16,8 @@
         "key": "ctrl+j",
         "command": "workbench.action.navigateDown",
     },
+    {
+        "key": "shift+k",
+        "command": "editor.action.showHover",
+    },
 ]
